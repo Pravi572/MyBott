@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 
 # Set your OpenAI API key
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = 'your-api-key'
 
 # Function to generate text with continuous stream
 def generate_text(prompt):
@@ -33,8 +33,8 @@ def generate_text(prompt):
     return response_text
 
 # Streamlit UI setup
-st.title("My first chatbot")
-st.write("Ask me anything")
+st.title("Paralympics 2024 Chatbot")
+st.write("Ask me anything about India's performance in the 2024 Paralympics!")
 
 # User input
 user_input = st.text_input("You:", placeholder="Type your question here...")
